@@ -7,12 +7,13 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background: blue;
+    background: #fff;
     width: 100%;
 }
 
 nav ul {
     list-style: none;
+    float: right;
 }
 
 nav li {
@@ -22,9 +23,17 @@ nav li {
 
 nav li a {
     display: block;
-    color: #fff;
+    color: rgb(85, 138, 252);
     text-decoration: none;
-    padding: 20px 20px;
+    padding: 20px 40px;
+}
+
+nav .logo img {
+    width: 15%;
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 0 20px;
 }
 
 main {
@@ -42,6 +51,15 @@ main {
 #footer .column {
     color: #fff;
     padding: 10px 60px;
+}
+
+#footer .logo img  {
+    width: 100%;
+}
+
+.covid a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .socials-group {
