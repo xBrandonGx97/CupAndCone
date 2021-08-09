@@ -35,6 +35,13 @@ nav li a {
     padding: 20px 40px;
 }
 
+nav li a:hover {
+  background: hsl(57, 100%, 50%);
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px #000000;
+  font-weight: 600;
+}
+
 nav .logo img {
     width: 15%;
     float: left;
