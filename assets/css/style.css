@@ -1,4 +1,33 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+/* TABLE OF CONTENTS
+
+  1. GLOBAL STYLES
+
+  2. TYPOGRAPHY
+
+  3. LAYOUT
+    3.1 TOP NAV BAR
+    3.2 FOOTER
+    3.3 SECTIONS
+      3.3.1 FLAVOR OF THE DAY
+      3.3.2 CUSTOMERS FAVORITES
+      3.3.3 ONLINE ORDERS
+      3.3.4 INSTAGRAM GRID
+      3.3.4 REVIEWS
+
+  4. COMPONENTS
+    4.1 BUTTONS
+
+  5. FLEX BOX
+
+*/
+
+/* ---------
+    1. GLOBAL STYLES
+    ---------
+*/
 
 /* * {
   margin: 0;
@@ -21,12 +50,27 @@ li {
 }
 
 a {
+  color: hsl(218, 100%, 40%);
   text-decoration: none;
 }
 
+/* ---------
+    3. LAYOUT
+    ---------
+*/
+
 .container {
-    min-height: 100%;
+  min-height: 100%;
 }
+
+main {
+  margin-top: 8%;
+}
+
+/* ---------
+    3.1 TOP NAV BAR
+    ---------
+*/
 
 nav {
     position: absolute;
@@ -69,9 +113,62 @@ nav .logo img {
     padding: 0 20px;
 }
 
-main {
-    margin-top: 8%;
+/* ---------
+    3.2 FOOTER
+    ---------
+*/
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: hsl(210, 15%, 95%);
 }
+
+#footer .column {
+  padding: 10px 60px;
+}
+
+#footer .logo img  {
+  width: 100%;
+}
+
+#footer h4,h5 {
+  color: hsl(218, 100%, 40%);
+}
+
+#footer p {
+  color: hsl(218, 100%, 40%);
+}
+
+.covid a {
+  color: hsl(218, 100%, 40%);
+  text-decoration: none;
+}
+
+.socials-group {
+  display: inline-block;
+}
+
+.social-item {
+  display: inline-block;
+  padding-right: 20px;
+  color: #fff;
+}
+
+.social-item a {
+  color: hsl(218, 100%, 40%);
+}
+
+/* ---------
+    3.3 SECTIONS
+    ---------
+*/
+
+/* ---------
+    3.3.1 FLAVOR OF THE DAY
+    ---------
+*/
 
 #flavorOfTheDay {
     color: #1d252c;
@@ -84,17 +181,67 @@ main {
   font-weight: 900;
 }
 
+/* ---------
+    3.3.2 CUSTOMERS FAVORITES
+    ---------
+*/
+
 #favorites {
     color: #1d252c;
     text-align: center;
 }
 
-#onlineOrdering {
-    background: hsl(218, 100%, 40%);
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+#favorites h3 {
+  font-weight: 900;
+  font-size: 26px;
 }
+
+#favorites #cherry {
+  color:  hsl(348, 96%, 42%);
+}
+
+#favorites #pc {
+  color:  hsl(44, 59%, 87%);
+  text-shadow: 1px 1px 1px #000000;
+}
+
+#favorites #mango {
+  color: hsl(41, 89%, 61%);
+}
+
+/* ---------
+    3.3.3 ONLINE ORDERS
+    ---------
+*/
+
+#onlineOrdering {
+  background: hsl(218, 100%, 40%);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.placeOrder {
+  background: hsl(57, 100%, 50%);
+  color: hsl(218, 100%, 40%);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.placeOrder:hover {
+  background: hsl(218, 99%, 50%);
+  color: #fff;
+}
+
+/* ---------
+    3.3.4 INSTAGRAM GRID
+    ---------
+*/
 
 .follow {
   background: hsl(218, 100%, 40%);
@@ -122,77 +269,9 @@ main {
   font-weight: 600;
 }
 
-.placeOrder {
-  background: hsl(57, 100%, 50%);
-  color: hsl(218, 100%, 40%);
-  padding: 10px 30px;
-  border: none;
-  border-radius: 5px;
-  margin-top: 5px;
-  font-weight: 900;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.placeOrder:hover {
-  background: hsl(218, 99%, 50%);
-  color: #fff;
-}
-
 #instagramPosts {
     color: #1d252c;
 }
-
-#reviews {
-    color: #1d252c;
-    text-align: center;
-}
-
-#footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background: hsl(210, 15%, 95%);
-}
-
-#footer .column {
-    padding: 10px 60px;
-}
-
-#footer .logo img  {
-    width: 100%;
-}
-
-#footer h4,h5 {
-    color: hsl(218, 100%, 40%);
-}
-
-#footer p {
-    color: hsl(218, 100%, 40%);
-}
-
-.covid a {
-    color: hsl(218, 100%, 40%);
-    text-decoration: none;
-}
-
-.socials-group {
-    display: inline-block;
-}
-
-.social-item {
-    display: inline-block;
-    padding-right: 20px;
-    color: #fff;
-}
-
-.social-item a {
-    color: hsl(218, 100%, 40%);
-}
-
-#instagramPosts .instagram-item {
-
-} 
 
 #instagramPosts img {
   width: 100%;
@@ -226,31 +305,18 @@ main {
   text-align: center;
 }
 
-#favorites h3 {
-  font-weight: 900;
-  font-size: 26px;
-}
+/* ---------
+    3.3.5 REVIEWS
+    ---------
+*/
 
-#favorites #cherry {
-  color:  hsl(348, 96%, 42%);
-}
-
-#favorites #pc {
-  color:  hsl(44, 59%, 87%);
-  text-shadow: 1px 1px 1px #000000;
-}
-
-#favorites #mango {
-  color: hsl(41, 89%, 61%);
-}
-
-a {
-  color: hsl(218, 100%, 40%);
-  text-decoration: none;
+#reviews {
+  color: #1d252c;
+  text-align: center;
 }
 
 /* ---------
-    6. FLEX BOX
+    5. FLEX BOX
     ---------
 */
 
