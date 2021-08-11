@@ -100,6 +100,7 @@ main {
     color: #fff;
     text-decoration: none;
     padding: 20px 40px;
+    font-size: 1.25rem;
 }
 
 .navbar .nav-item .nav-link:hover {
@@ -127,6 +128,7 @@ main {
   bottom: 0;
   width: 100%;
   background: hsl(210, 15%, 95%);
+  border-top: 3px solid hsl(218, 100%, 40%);
 }
 
 #footer .column {
@@ -183,6 +185,10 @@ main {
     text-align: center;
 }
 
+#flavorOfTheDay h1 {
+  font-size: 2.5rem;  
+}
+
 #flavorOfTheDay p {
   color: hsl(218, 100%, 40%);
   font-size: 2rem;
@@ -197,6 +203,10 @@ main {
 #favorites {
     color: #1d252c;
     text-align: center;
+}
+
+#favorites h1 {
+  font-size: 2.5rem;
 }
 
 #favorites h3 {
@@ -232,12 +242,13 @@ main {
 .placeOrder {
   background: hsl(57, 100%, 50%);
   color: hsl(218, 100%, 40%);
-  padding: 10px 30px;
+  padding: 15px 75px;
   border: none;
   border-radius: 5px;
   margin-top: 5px;
+  margin-bottom: 10px;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -288,10 +299,13 @@ main {
 
 #instagramPosts .header {
   text-align: center;
+  height: 20px;
 }
 
 .instagram-title {
   display: inline-block;
+  position: relative;
+  top: 22px;
 }
 
 .instagram-handle {
