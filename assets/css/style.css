@@ -186,7 +186,7 @@ main {
 }
 
 #flavorOfTheDay h1 {
-  font-size: 2.5rem;  
+  font-size: 2.5rem;
 }
 
 #flavorOfTheDay p {
@@ -352,6 +352,38 @@ main {
 
 /* Responsiveness */
 
+@media (min-width: 320px) { /* for general stylings (both, mobile && desktop) */
+
+}
+
+@media (max-width: 767px) { /* for only styles between 320px and 768px (most mobile devies) */
+  #instagramPosts .header {
+    height: auto;
+  }
+
+  .instagram-title {
+    display: block;
+    position: static;
+  }
+
+  .instagram-handle {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) { /* general desktop && tablet styles if needed */
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { /* only tablet styles */
+
+}
+
+@media (min-width: 1025px) { /* start with desktop styling */
+
+}
+
 /* phones */
 @media only screen and (min-width: 320px) {
   .col-sm-1 {
@@ -400,7 +432,6 @@ main {
   .col-sm-12 {
     width: 100%;
   }
-}
 
 /* tablets */
 @media only screen and (min-width: 768px) {
