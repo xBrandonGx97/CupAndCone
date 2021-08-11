@@ -336,6 +336,22 @@ main {
   text-align: center;
 }
 
+.reviewCard {
+  background:hsl(218, 99%, 50%);
+  color: #fff;
+  min-width: 0;
+  margin: 10px;
+  text-align: left;
+}
+
+.reviewCard .header {
+  padding: 2% 5%;
+}
+
+.reviewCard .body {
+  padding: 2% 5%;
+}
+
 /* ---------
     5. FLEX BOX
     ---------
