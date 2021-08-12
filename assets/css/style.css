@@ -343,15 +343,27 @@ main {
   color: #fff;
   min-width: 0;
   margin: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 .reviewCard .header {
-  padding: 2% 5%;
+  padding: 1% 5%;
+}
+
+.reviewCard .header .name {
+  font-size: 1.6rem;
 }
 
 .reviewCard .body {
-  padding: 2% 5%;
+  padding: 1% 5%;
+  letter-spacing: .1rem;
+  font-size: 1.1rem;
+  margin-bottom: 10%;
+}
+
+.reviewCard .body .quote {
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
 /* ---------
