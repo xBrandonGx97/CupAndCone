@@ -46,7 +46,7 @@ body {
     height: 100%;
     /* background: url('../images/backgrounds/main.jpg') no-repeat center center fixed;
     background-size: cover; */
-    background: hsl(210, 15%, 95%);
+    background: #fff;
 }
 
 li {
@@ -54,7 +54,7 @@ li {
 }
 
 a {
-  color: hsl(218, 100%, 40%);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ main {
     top: 0;
     left: 0;
     right: 0;
-    background: hsl(218, 100%, 29%);
+    background: hsl(190, 39%, 59%);
     width: 100%;
 }
 
@@ -104,7 +104,7 @@ main {
 }
 
 .navbar .nav-item .nav-link:hover {
-  background: hsl(57, 100%, 50%);
+  background: hsl(144, 26%, 34%);
   border-radius: 5px;
   text-shadow: 1px 1px 1px #000000;
   font-weight: 600;
@@ -127,8 +127,7 @@ main {
   position: relative;
   bottom: 0;
   width: 100%;
-  background: hsl(210, 15%, 95%);
-  border-top: 3px solid hsl(218, 100%, 40%);
+  background: hsl(190, 39%, 59%);
 }
 
 #footer .column {
@@ -140,15 +139,15 @@ main {
 }
 
 #footer h4,h5 {
-  color: hsl(218, 100%, 29%);
+  color: #fff;
 }
 
 #footer p {
-  color: hsl(218, 100%, 29%);
+  color: #fff;
 }
 
 .covid a {
-  color: hsl(218, 100%, 29%);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -163,11 +162,17 @@ main {
 }
 
 .social-item a {
-  color: hsl(218, 100%, 29%);
+  color: #fff;
 }
 
 .social-item a:hover {
-  color: hsl(218, 100%, 40%);
+  color: #F39A9D;
+}
+
+hr {
+  height: 1px;
+  background-color: #FFEAEC;
+  order: none;
 }
 
 /* ---------
@@ -183,6 +188,8 @@ main {
 #flavorOfTheDay {
     color: #1d252c;
     text-align: center;
+    padding-top: 0.1rem;
+    padding-bottom: 2rem;
 }
 
 #flavorOfTheDay h1 {
@@ -190,7 +197,7 @@ main {
 }
 
 #flavorOfTheDay p {
-  color: hsl(218, 100%, 40%);
+  color: #000;
   font-size: 2rem;
   font-weight: 900;
 }
@@ -203,6 +210,8 @@ main {
 #favorites {
     color: #1d252c;
     text-align: center;
+    padding-top: 0.1rem;
+    padding-bottom: 2rem;
 }
 
 #favorites h1 {
@@ -215,16 +224,15 @@ main {
 }
 
 #favorites #cherry {
-  color:  hsl(348, 96%, 42%);
+  color:  #000000;
 }
 
 #favorites #pc {
-  color:  hsl(44, 59%, 87%);
-  text-shadow: 1px 1px 1px #000000;
+  color:  #000000;
 }
 
 #favorites #mango {
-  color: hsl(41, 89%, 61%);
+  color: #000000;
 }
 
 /* ---------
@@ -233,15 +241,15 @@ main {
 */
 
 #onlineOrdering {
-  background: hsl(218, 100%, 29%);
+  background: hsl(358, 79%, 78%);
   color: #fff;
   text-align: center;
   padding: 10px;
 }
 
 .placeOrder {
-  background: hsl(57, 100%, 50%);
-  color: hsl(218, 100%, 40%);
+  background: hsl(354, 100%, 96%);
+  color: hsl(330, 6%, 7%);
   padding: 15px 75px;
   border: none;
   border-radius: 5px;
@@ -253,7 +261,7 @@ main {
 }
 
 .placeOrder:hover {
-  background: hsl(218, 99%, 50%);
+  background: hsl(190, 39%, 59%);
   color: #fff;
 }
 
@@ -263,7 +271,7 @@ main {
 */
 
 .follow {
-  background: hsl(218, 100%, 29%);
+  background: #F39A9D;
   color: #fff;
   padding: 10px 30px;
   border: none;
@@ -339,11 +347,27 @@ main {
 }
 
 .reviewCard {
-  background:hsl(218, 99%, 50%);
+  background:#F39A9D;
   color: #fff;
   min-width: 0;
   margin: 10px;
   text-align: center;
+}
+
+.reviewCard#first {
+  background: #6DB1BF;
+}
+
+.reviewCard#second {
+  background: #131112;
+}
+
+.reviewCard#third {
+  background: #F39A9D;
+}
+
+.reviewCard#fourth {
+  background: #3F6C51;
 }
 
 .reviewCard .header {
@@ -366,6 +390,52 @@ main {
   font-size: 1.5rem;
 }
 
+/* ---------
+    3.3.6 MENU
+    ---------
+*/
+
+#menu {
+  color: #1d252c;
+  text-align: center;
+  padding-top: 0.1rem;
+  padding-bottom: 2rem;
+}
+
+#menu h1 {
+  font-size: 2.5rem;
+  color: #131112;
+  font-weight: 900;
+}
+
+#menu h2 {
+  color: #F39A9D;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+#menu h3 {
+  color: #3F6C51;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#menu p {
+color: #000;
+font-size: 2rem;
+font-weight: 900;
+}
+
+#menu ul{
+  padding: 0 20px;
+} 
+#menu ul li    {
+  width: 150px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 10px 0;
+}
 /* ---------
     5. FLEX BOX
     ---------
