@@ -484,14 +484,13 @@ font-weight: 900;
   }
 
   .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: hsl(190, 39%, 59%);
     width: 100%;
     height: 100vh;
     text-align: left;
-    border-radius: 3px solid red;
     display: none;
   }
 
@@ -499,6 +498,7 @@ font-weight: 900;
       margin: 0;
       padding: 0;
       list-style: none;
+      
   }
 
   .navbar .nav-item {
@@ -522,6 +522,11 @@ font-weight: 900;
     margin-left: 5px;
     padding: 0 20px;
   }
+
+  body.header {
+    overflow: hidden;
+    overflow-y: hidden;
+  } 
 
   .nav-toggle:checked ~ nav {
     display: block;
